@@ -45,6 +45,8 @@ jobs:
       
     - name: Generate Launcher Icons
       run: |
+        echo "🎨 Installing Pillow for icon generation..."
+        pip install Pillow
         echo "🎨 Generating launcher icons..."
         python3 << 'PYEOF'
         from PIL import Image, ImageDraw, ImageFont
